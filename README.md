@@ -5,6 +5,16 @@ It uses and provides `NonAnimatedUIKitModal: UIViewControllerRepresentable` view
 
 ![modal presentation](Sources/SwiftUIModal/Documentation.docc/modal_presentation.gif)
 
+---
+
+- [Why](#why)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Presentation](#presentation)
+  - [Configuration](#configuration)
+- [Documentation](#documentation)
+- [License](#license)
+
 ## Why
 
 There is many different SwiftUI modals available on open source.
@@ -104,3 +114,14 @@ The bottom sheet can be configured using `bottomSheetConfiguration` view modifie
     )
 )
 ```
+
+## Documentation
+
+The documentation for the latest release is available here:
+
+* [main](https://nonameplum.github.io/SwiftUIModal/main/documentation/swiftuimodal/)
+* [1.0.0](https://nonameplum.github.io/SwiftUIModal/1.0.0/documentation/swiftuimodal/)
+
+## License
+
+This library is released under the MIT license. See [LICENSE](LICENSE.md) for details.
