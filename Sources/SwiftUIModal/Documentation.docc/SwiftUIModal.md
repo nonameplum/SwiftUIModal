@@ -11,7 +11,7 @@ It uses and provides ``NonAnimatedUIKitModal`` view that handles the modal UIKit
 
 ![modal presentation](modal_presentation)
 
-The bottom shhet usage is very similar to SwiftUI [`sheet`](https://developer.apple.com/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) or [`fullScreenCover`](https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:)) by using `bottomSheet` method:
+The bottom sheet usage is very similar to SwiftUI [`sheet`](https://developer.apple.com/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) or [`fullScreenCover`](https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:)) by using `bottomSheet` method:
 
 ```swift
 struct Modal: View {
