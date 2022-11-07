@@ -1,7 +1,6 @@
 import UIKit
 import SwiftUI
 
-
 /// A view that presents SwiftUI ``DismissableView`` modaly without animation.
 public struct NonAnimatedUIKitModal<Presented>: UIViewControllerRepresentable where Presented: DismissableView {
     public let isPresented: Binding<Bool>

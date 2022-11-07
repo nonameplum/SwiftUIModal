@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct BottomSheetView<Content>: DismissableView where Content: View {
-    var onDismiss: () -> Void
+public struct BottomSheetView<Content>: DismissableView where Content: View {
+    public var onDismiss: () -> Void
 
     @GestureState private var translation: CGFloat = 0
     @State private var contentHeight: CGFloat = 0
@@ -14,7 +14,7 @@ struct BottomSheetView<Content>: DismissableView where Content: View {
 
     private let content: Content
 
-    init(
+    public init(
         configuration: BottomSheetConfiguration? = nil,
         onDismiss: @escaping () -> Void = {},
         @ViewBuilder content: () -> Content
@@ -24,7 +24,7 @@ struct BottomSheetView<Content>: DismissableView where Content: View {
         self.content = content()
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
                 configuration.indicator
@@ -68,7 +68,7 @@ struct BottomSheetView<Content>: DismissableView where Content: View {
         }
     }
 
-    func dismiss(completion: @escaping () -> Void = {}) {
+    public func dismiss(completion: @escaping () -> Void = {}) {
         withAnimation(springAnimation) {
             show = false
         }
