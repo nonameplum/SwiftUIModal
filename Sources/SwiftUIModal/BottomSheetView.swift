@@ -34,7 +34,7 @@ public struct BottomSheetView<Content>: DismissableView where Content: View {
                     .onTapGesture {}
                 Rectangle().fill(.clear).frame(maxWidth: geometry.size.width, maxHeight: Constants.bottomPaddingHeight)
             }
-            .padding(.bottom, safeAreaInsets().bottom)
+            .ignoresSafeArea()
             .readSize {
                 contentHeight = $0.height
             }
@@ -57,7 +57,6 @@ public struct BottomSheetView<Content>: DismissableView where Content: View {
                 })
                 .opacity(show ? 1 : 0)
         }
-        .ignoresSafeArea()
         .contentShape(Rectangle())
         .onAppear {
             DispatchQueue.main.async {
@@ -96,17 +95,6 @@ public struct BottomSheetView<Content>: DismissableView where Content: View {
         if translationHeight > ratioHeight {
             dismiss()
         }
-    }
-
-    private func safeAreaInsets() -> UIEdgeInsets {
-        UIApplication.shared
-            .connectedScenes
-            .first
-            .flatMap { $0 as? UIWindowScene }?
-            .windows
-            .first(where: { $0.isKeyWindow })?
-            .safeAreaInsets
-            ?? .zero
     }
 }
 
