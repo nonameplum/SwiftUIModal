@@ -56,6 +56,7 @@ public struct BottomSheetView<Content>: DismissableView where Content: View {
                     dismiss()
                 })
                 .opacity(show ? 1 : 0)
+                .ignoresSafeArea()
         }
         .contentShape(Rectangle())
         .onAppear {
