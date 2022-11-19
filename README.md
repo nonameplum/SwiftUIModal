@@ -122,6 +122,7 @@ The documentation for the latest release is available here:
 * [main](https://nonameplum.github.io/SwiftUIModal/main/documentation/swiftuimodal/)
 * [1.0.0](https://nonameplum.github.io/SwiftUIModal/1.0.0/documentation/swiftuimodal/)
 * [1.0.1](https://nonameplum.github.io/SwiftUIModal/1.0.1/documentation/swiftuimodal/)
+* [1.0.2](https://nonameplum.github.io/SwiftUIModal/1.0.2/documentation/swiftuimodal/)
 
 ## License
 
