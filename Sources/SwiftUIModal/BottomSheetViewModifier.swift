@@ -126,7 +126,7 @@ extension View {
     public func bottomSheet<Item, Content>(
         item: Binding<Item?>,
         onDismiss: (() -> Void)? = nil,
-        ViewBuilder content: @escaping (Item) -> Content
+        @ViewBuilder content: @escaping (Item) -> Content
     ) -> some View where Content: View {
         bottomSheet(isPresented: item.isPresent(), onDismiss: onDismiss, content: {
             if let value = item.wrappedValue {
